@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM ruby:2.7.5
+FROM ruby:3.3.0
 RUN apt-get update -qq && apt-get install -y postgresql-client
 WORKDIR /docker-compose-on-rails
 COPY Gemfile /docker-compose-on-rails/Gemfile
